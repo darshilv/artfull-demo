@@ -1,0 +1,67 @@
+.appContainer{
+	max-width: 1024px;
+	width: 1024px;
+	height: 100%;
+	overflow: hidden;
+	background-color: #EDEDED;
+}
+
+.animate{
+	transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.on-screen{
+	top: 0px;
+	left: 0px;
+	opacity: 1;
+	width: 100%;
+	height: 100%;
+}
+
+.off-screen-right {
+	top: 0px;
+	left: 100%;
+	opacity: 0;
+}
+
+.off-screen-bottom{
+	top: 100%;
+	left: 0%;
+	opacity: 0;
+}
+
+.off-screen-top{
+	top: -100%;
+	left: 0%;
+	opacity: 0;
+}
+
+.off-screen{
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	opacity: 0;
+}
+
+.keyboard-up{
+	top: 55%;
+}
+
+.keyboard{
+	top : 150%;
+}
+
+.nav-section{
+	top: 0px;
+}
+
+.content-section{
+	top : -50px;
+}
+
+.content-section-down{
+	top: 0px;
+}

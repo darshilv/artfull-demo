@@ -1,0 +1,63 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0, user-scalable = no">
+	<title>App</title>
+	<script type="text/javascript" src="vendor/jquery.min.js"></script>
+	<script type="text/javascript" src="vendor/velocity.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/basscss.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="appContainer">
+		<!-- Login Screen 1 -->
+		<div class="screens animate absolute on-screen" id="loginScreen1">
+			<a href="javascript:void(0)" onclick="navigate('login')">
+				<img src="artfull/Login 1.png" alt="">
+			</a>
+		</div>
+		<!-- Login Screen 2 -->
+		<div class="screens animate absolute off-screen" id="loginScreen2">
+			<a href="javascript:void(0)" onclick="navigate('home')">
+				<div>
+					<img src="artfull/Login 2.png" alt="">
+				</div>
+				<div class="animate keyboard absolute" id="keyboard">
+					<img src="artfull/keyboard.png" alt="">
+				</div>
+			</a>
+		</div>
+		<!-- Home Screen -->
+		<div class="screens animate absolute off-screen-right" id="homeScreen">
+			<div>
+				<div id="homeSection" class="content-section animate absolute">
+					<img id="notification" src="artfull/notification.png" alt="" class="animate absolute" onclick="navigate('poll')">
+					<img src="artfull/Home.png" alt="" class="animate">
+				</div>
+				</a>
+			</div>
+		</div>
+		<!-- Create Poll Screen -->
+		<div id="pollScreen" class="screens animate absolute off-screen-right">
+			<div>
+				<img src="artfull/Create Poll.png" alt="">
+			</div>
+		</div>
+		<!-- Camera Roll Screen -->
+		<div class="screens animate absolute off-screen-bottom" id="camera-rollScreen">
+			Camera Roll
+		</div>
+		<!-- Poll Created Screen -->
+		<div class="screens animate absolute off-screen" id="poll-createdScreen">
+			Poll Created Screen
+		</div>
+	</div>
+	<div id="navBar" class="absolute animate off-screen-top">
+		<img src="artfull/nav1.png" alt="" id="nav1">
+		<img src="artfull/nav2.png" alt="" id="nav2">
+	</div>
+</body>
+</html>
