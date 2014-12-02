@@ -22,6 +22,10 @@ function navigate(str){
 					"top": "85px",
 					"opacity" : 1
 				});
+				$("#home").css({
+					"top": "170px",
+					"opacity" : 1
+				});
 			}, 4500);
 			break;
 		case "login":
@@ -40,7 +44,10 @@ function navigate(str){
 			animateScreens("homeScreen","on-screen", "off-screen-right");
 			$("#nav1").hide();
 			$("#nav2").show();
-
+			break;
+		case "stats":
+			animateScreens("pollScreen", "on-screen", "off-screen-right");
+			animateScreens("poll-createdScreen", "off-screen-right", "on-screen");
 			break;
 
 		case "phoneApp":

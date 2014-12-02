@@ -33,26 +33,25 @@
 		<!-- Home Screen -->
 		<div class="screens animate absolute off-screen-right" id="homeScreen">
 			<div>
-				<div id="homeSection" class="content-section animate absolute">
-					<img id="notification" src="artfull/notification.png" alt="" class="animate absolute" onclick="navigate('poll')">
-					<img src="artfull/Home.png" alt="" class="animate">
+				<div id="notification" class="content-section animate absolute">
+					<img src="artfull/notification.png" alt="" class="animate" onclick="navigate('poll')">
 				</div>
-				</a>
+				<div id="home" class="absolute content-section animate">
+						<img src="artfull/Home.png" alt="" class="animate">
+					</div>
 			</div>
 		</div>
 		<!-- Create Poll Screen -->
 		<div id="pollScreen" class="screens animate absolute off-screen-right">
 			<div>
-				<img src="artfull/Create Poll.png" alt="">
+				<img src="artfull/Create Poll.png" alt="" onclick="navigate('stats')">
 			</div>
 		</div>
-		<!-- Camera Roll Screen -->
-		<div class="screens animate absolute off-screen-bottom" id="camera-rollScreen">
-			Camera Roll
-		</div>
 		<!-- Poll Created Screen -->
-		<div class="screens animate absolute off-screen" id="poll-createdScreen">
-			Poll Created Screen
+		<div class="screens animate absolute off-screen-right" id="poll-createdScreen">
+			<div>
+				<img src="artfull/stats.png" alt="">
+			</div>
 		</div>
 	</div>
 	<div id="navBar" class="absolute animate off-screen-top">
