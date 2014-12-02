@@ -42,6 +42,11 @@ function navigate(str){
 			$("#nav2").show();
 
 			break;
+
+		case "phoneApp":
+			animateScreens("notification", "on-screen", "off-screen-right");
+			animateScreens("phoneApp", "off-screen-right", "on-screen");
+			break;
 	}
 }
 

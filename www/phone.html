@@ -1,0 +1,27 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0, user-scalable = no">
+	<title>App</title>
+	<script type="text/javascript" src="vendor/jquery.min.js"></script>
+	<script type="text/javascript" src="vendor/velocity.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/basscss.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+		<!-- Notification -->
+		<div class="screens animate absolute on-screen" id="notification">
+			<a href="javascript:void(0)" onclick="navigate('phoneApp')">
+				<img src="artfull/phone_notification.png" alt="">
+			</a>
+		</div>
+		<!-- App  -->
+		<div class="screens animate absolute off-screen-right" id="phoneApp">
+			<img src="artfull/phone_poll.png" alt="">
+		</div>
+	</div>
+</body>
+</html>
