@@ -1,9 +1,18 @@
+body{
+	overflow: hidden;
+}
+
 .appContainer{
 	max-width: 1024px;
 	width: 1024px;
 	height: 100%;
 	overflow: hidden;
 	background-color: #EDEDED;
+	overflow: hidden;
+}
+
+.scrollable{
+	overflow: auto;
 }
 
 .animate{
@@ -11,6 +20,10 @@
   transition-duration: .5s;
   transition-timing-function: ease;
   transition-delay: 0s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: .5s;
+  -webkit-transition-timing-function: ease;
+  -webkit-transition-delay: 0s;
 }
 
 .on-screen{
