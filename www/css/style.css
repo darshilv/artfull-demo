@@ -73,3 +73,11 @@
 #pollScreen{
 	top: 15px;
 }
+
+#commentBox{
+	width: 80%;
+	height: 130px;
+	bottom: -180px;
+	margin: -20px 30px;
+	background-color: #EDEDED;
+}
