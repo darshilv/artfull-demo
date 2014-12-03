@@ -1,8 +1,9 @@
-<html>
+<html manifest="./cache_manifest.cfm">
 <head>
 	<meta charset="UTF-8">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0, user-scalable = no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	<title>App</title>
 	<script type="text/javascript" src="vendor/jquery.min.js"></script>
 	<script type="text/javascript" src="vendor/velocity.min.js"></script>
@@ -16,14 +17,14 @@
 		<!-- Login Screen 1 -->
 		<div class="screens animate absolute on-screen" id="loginScreen1">
 			<a href="javascript:void(0)" onclick="navigate('login')">
-				<img src="artfull/Login 1.png" alt="">
+				<img src="artfull/Login1.png" alt="">
 			</a>
 		</div>
 		<!-- Login Screen 2 -->
 		<div class="screens animate absolute off-screen" id="loginScreen2">
 			<a href="javascript:void(0)" onclick="navigate('home')">
 				<div>
-					<img src="artfull/Login 2.png" alt="">
+					<img src="artfull/Login2.png" alt="">
 				</div>
 				<div class="animate keyboard absolute" id="keyboard">
 					<img src="artfull/keyboard.png" alt="">
@@ -44,7 +45,7 @@
 		<!-- Create Poll Screen -->
 		<div id="pollScreen" class="screens animate absolute off-screen-right">
 			<div>
-				<img src="artfull/Create Poll.png" alt="" onclick="navigate('stats')">
+				<img src="artfull/CreatePoll.png" alt="" onclick="navigate('stats')">
 			</div>
 		</div>
 		<!-- Poll Created Screen -->
